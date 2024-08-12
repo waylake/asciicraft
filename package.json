@@ -1,5 +1,8 @@
 {
-  "name": "alphabet2ascci-server",
+  "name": "asciicraft",
+  "version": "1.0.0",
+  "description": "A web application that transforms text into ASCII art",
+  "main": "dist/server/server.js",
   "scripts": {
     "build:css": "postcss src/styles/tailwind.css -o public/styles/tailwind.css",
     "build:client": "webpack --mode production",
@@ -9,15 +12,39 @@
     "start": "node dist/server/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server/server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waylake/asciicraft.git"
+  },
+  "keywords": [
+    "ascii",
+    "art",
+    "text",
+    "generator",
+    "react",
+    "express",
+    "ssr"
+  ],
+  "author": "waylake <waylake2003@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waylake/asciicraft/issues"
+  },
+  "homepage": "https://github.com/waylake/asciicraft#readme",
   "devDependencies": {
     "@types/bun": "latest",
     "@types/express": "^4.17.21",
     "@types/figlet": "^1.5.8",
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0"
-  },
-  "peerDependencies": {
-    "typescript": "^5.5.4"
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.28.0",
+    "jest": "^27.0.0",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.0.0"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
@@ -39,5 +66,8 @@
     "ts-node-dev": "^2.0.0",
     "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
