@@ -10,7 +10,7 @@
     "copy:views": "cp -R src/views dist/views",
     "build": "npm run build:css && npm run build:client && npm run build:server && npm run copy:views",
     "start": "node dist/server/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/server/server.js"
+    "dev": "ts-node-dev --respawn --transpile-only src/server/server.ts"
   },
   "repository": {
     "type": "git",
